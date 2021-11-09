@@ -1,16 +1,15 @@
 export default class Transaction {
-    public amount: number = 0;
-    public payer: string = "";
-    public payee: string = "";
+  public amount = 0;
+  public payer = "";
+  public payee = "";
 
-    constructor(amaount: number, payer: string, payee: string) {
-        this.amount = amaount;
-        this.payer = payer;
-        this.payee = payee;
-    }
+  public constructor(amaount: number, payer: string, payee: string) {
+    this.amount = amaount;
+    this.payer = payer;
+    this.payee = payee;
+  }
 
-    toString() {
-        return JSON.stringify(this);
-    }
-
+  public toString() {
+    return JSON.stringify(this);
+  }
 }
